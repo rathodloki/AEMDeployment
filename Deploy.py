@@ -7,7 +7,7 @@ env=["SIT",ipadd]
 
 #Starting Local AEM jar
 def aemStart():
-    os.chdir("E:/projects/tata-capital-nli/aem-author")
+    os.chdir("Dir")
     os.system("jps -mlvv | findstr 4502 > jps.txt")
     if(re.search("AEM_6.4_Quickstart.jar",open("jps.txt").read())):
        print("AEM is already started.")
